@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { FiLogIn } from 'react-icons/fi';
 
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/logo.svg';
 
-import './styles.css'
+import './styles.css';
 
 const Home = () => {
   return (
@@ -17,13 +18,13 @@ const Home = () => {
           <h1>Seu Makertplace de coleta de resíduos.</h1>
           <p>Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente.</p>
 
-          <a href="/create-point">
+          <Link to="/create-point">
             <span>
               <FiLogIn />
             </span>
 
             <strong>Cadastre um ponto de coleta</strong>
-          </a>
+          </Link>
         </main>
       </div>
     </div>
